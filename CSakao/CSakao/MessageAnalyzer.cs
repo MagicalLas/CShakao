@@ -8,13 +8,16 @@ namespace CSakao
 {
     class MessageAnalyzer
     {
-        public bool IsCommand(string message) {
-            if (message[0] == '/') {
+        public bool IsCommand(string message)
+        {
+            if (message[0] == '/')
+            {
                 return true;
             }
             return false;
         }
-        public void ExcuteCommand(string command, Client client) {
+        public void ExcuteCommand(string command, Client client)
+        {
             client.Send(command);
         }
     }
