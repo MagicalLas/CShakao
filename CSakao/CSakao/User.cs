@@ -12,14 +12,14 @@ namespace CSakao
         string name;
         string id;
         MessageAnalyzer analyzer;
-        User()
+        public User()
         {
             client = new Client(9090);
             name = "Null";
             id = name;
             client.ShakeHand(name);
         }
-        User(string name)
+        public User(string name)
         {
             client = new Client();
             this.name = name;
